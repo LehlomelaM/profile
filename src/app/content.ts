@@ -123,11 +123,11 @@ export const siteContent = {
   },
   contact: {
     title: 'Contact',
-    description: "Want to collaborate ? Send a note and I'll reply quickly.",
+    description: "Want to collaborate or hire? Send a note and I'll reply quickly.",
     info: [
       { label: 'Email', value: 'lehlomelam@proton.me', href: 'mailto:lehlomelam@proton.me' },
-      { label: 'LinkedIn', value: 'linkedin.com/in/yourname', href: '#' },
-      { label: 'GitHub', value: 'github.com/LehlomelaM', href: '#' },
+      { label: 'LinkedIn', value: 'linkedin.com/in/lehlomelam', href: 'https://www.linkedin.com/in/lehlomelam' },
+      { label: 'GitHub', value: 'github.com/LehlomelaM', href: 'https://github.com/LehlomelaM' },
       { label: 'Location', value: 'Gauteng, South Africa', href: '' },
     ],
     form: {
@@ -136,8 +136,8 @@ export const siteContent = {
         email: 'Email',
         message: 'Message',
       },
-      namePlaceholder: 'Lehlomela Mokoena',
-      emailPlaceholder: 'lehlomelam@proton.me',
+      namePlaceholder: 'Your Name',
+      emailPlaceholder: 'youremail@provider.com',
       messagePlaceholder: 'Tell me about your project...',
       note:
         'Wire to a service (Formspree, Netlify Forms) when deploying.',
@@ -145,6 +145,5 @@ export const siteContent = {
   },
   footer: {
     name: 'Lehlomela Mokoena',
-    note: 'Built with Angular.',
   },
 } as const;

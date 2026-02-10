@@ -3,7 +3,7 @@
     <div class="contact__row">
       <span class="k">{{ item.label }}</span>
       @if (item.href) {
-        <a [href]="item.href">{{ item.value }}</a>
+        <a [href]="item.href" target="_blank" rel="noopener noreferrer">{{ item.value }}</a>
       } @else {
         <span>{{ item.value }}</span>
       }

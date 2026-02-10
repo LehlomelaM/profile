@@ -5,6 +5,7 @@ import { HeroSection } from './features/hero/hero-section/hero-section';
 import { CapabilitiesSection } from './features/capabilities/capabilities-section/capabilities-section';
 import { SiteFooter } from './features/footer/site-footer/site-footer';
 import { SiteHeader } from './features/header/site-header/site-header';
+import { ProjectsSection } from './features/projects/projects-section/projects-section';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +13,7 @@ import { SiteHeader } from './features/header/site-header/site-header';
     AboutSection,
     CapabilitiesSection,
     ContactSection,
+    ProjectsSection,
     HeroSection,
     SiteFooter,
     SiteHeader
