@@ -5,7 +5,7 @@
       [description]="content.description"
     ></app-section-header>
 
-    <div class="cards">
+    <div class="cards cards--stagger">
       @for (item of content.cards; track item.title) {
         <app-info-card
           [title]="item.title"
