@@ -1,0 +1,24 @@
+<section id="projects" class="section section--alt">
+  <div class="container">
+    <app-section-header
+      [title]="content.title"
+      [description]="content.description"
+    ></app-section-header>
+
+    <div class="projects">
+      @for (item of content.items; track item.title) {
+        <app-project-card
+          [title]="item.title"
+          [tag]="item.tag"
+          [description]="item.description"
+          [primaryLabel]="item.links[0].label"
+          [primaryHref]="item.links[0].href"
+          [primaryAria]="item.links[0].aria"
+          [secondaryLabel]="item.links[1].label"
+          [secondaryHref]="item.links[1].href"
+          [secondaryAria]="item.links[1].aria"
+        ></app-project-card>
+      }
+    </div>
+  </div>
+</section>

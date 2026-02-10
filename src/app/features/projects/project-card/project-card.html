@@ -1,0 +1,11 @@
+<article class="project">
+  <div class="project__top">
+    <h3>{{ title() }}</h3>
+    <p class="project__tag">{{ tag() }}</p>
+  </div>
+  <p>{{ description() }}</p>
+  <div class="project__links">
+    <a [href]="primaryHref()" [attr.aria-label]="primaryAria()">{{ primaryLabel() }}</a>
+    <a [href]="secondaryHref()" [attr.aria-label]="secondaryAria()">{{ secondaryLabel() }}</a>
+  </div>
+</article>

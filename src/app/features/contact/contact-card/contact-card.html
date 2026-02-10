@@ -1,0 +1,12 @@
+<div class="contact__card">
+  @for (item of items; track item.label) {
+    <div class="contact__row">
+      <span class="k">{{ item.label }}</span>
+      @if (item.href) {
+        <a [href]="item.href">{{ item.value }}</a>
+      } @else {
+        <span>{{ item.value }}</span>
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,5 @@
+<nav class="nav" aria-label="Primary">
+  @for (item of links; track item.href) {
+    <a [href]="item.href">{{ item.label }}</a>
+  }
+</nav>

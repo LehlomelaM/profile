@@ -1,0 +1,26 @@
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="badge">{{ content.badge }}</p>
+      <h1>
+        {{ content.headline }}
+        <span class="accent">{{ content.accent }}</span>.
+      </h1>
+      <p class="lead">{{ content.lead }}</p>
+      <div class="hero__cta">
+        @for (item of content.cta; track item.href) {
+          <a class="btn" [class.btn--ghost]="item.variant === 'ghost'" [href]="item.href">
+            {{ item.label }}
+          </a>
+        }
+      </div>
+      <ul class="meta" aria-label="Highlights">
+        @for (item of content.highlights; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </div>
+
+    <app-hero-image></app-hero-image>
+  </div>
+</section>

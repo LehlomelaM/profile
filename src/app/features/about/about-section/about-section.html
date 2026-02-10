@@ -1,0 +1,17 @@
+<section id="about" class="section">
+  <div class="container">
+    <app-section-header
+      [title]="content.title"
+      [description]="content.description"
+    ></app-section-header>
+
+    <div class="cards">
+      @for (item of content.cards; track item.title) {
+        <app-info-card
+          [title]="item.title"
+          [description]="item.description"
+        ></app-info-card>
+      }
+    </div>
+  </div>
+</section>
